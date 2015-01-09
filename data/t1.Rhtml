@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<title>Title</title>
+</head>
+
+<body>
+
+<p>Eexecute the expression x <- 4L in R, what is the class of the object  'x'?</p>
+
+<!--begin.rcode
+x=4L
+class(x)
+end.rcode-->
+
+<p>If I have two vectors x <- c(1,3, 5) and y <- c(3, 2, 10), what is produced by the expression rbind(x, y)</p>
+
+<!--begin.rcode
+x <- c(1,3, 5)
+y <- c(3, 2, 10)
+z=rbind(x, y)
+z
+dim(z)
+end.rcode-->
+
+<p>Suppose I have a vector x <- c(17, 14, 4, 5, 13, 12, 10) and I want to set all elements of this vector that are greater than 10 to be equal to 4. What R code achieves this?</p>
+
+<!--begin.rcode
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x>10]=4
+x
+
+end.rcode-->
+
+<p>You can also embed plots, for example:</p>
+
+<!--begin.rcode fig.width=7, fig.height=6
+plot(cars)
+end.rcode-->
+
+</body>
+</html>
